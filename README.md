@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./images/9router.png?1" alt="9Peak — fork of 9Router" width="800"/>
 
-  # 9Peak — fork of 9Router
+  # 9PEAK — fork of 9Router
 
   **A downstream fork of [9Router](https://github.com/decolua/9router) by [@decolua](https://github.com/decolua), maintained by [Hoivn1 GitHub](https://github.com/hoivn1).**
 
@@ -20,7 +20,7 @@
 
 ## 🙏 Original 9Router & Credits
 
-> **9Peak is not original work.** It is a fork of [**9Router**](https://github.com/decolua/9router) by [@decolua](https://github.com/decolua) and contributors, distributed under the same [MIT License](./LICENSE).
+> **9PEAK is not original work.** It is a fork of [**9Router**](https://github.com/decolua/9router) by [@decolua](https://github.com/decolua) and contributors, distributed under the same [MIT License](./LICENSE).
 >
 > The core routing engine, SSE/streaming layer, OAuth flows, MITM proxy, dashboard UI framework, provider integrations, and CLI tooling are all the work of @decolua and the upstream 9Router community. **All credit for the underlying product goes to them.**
 >
