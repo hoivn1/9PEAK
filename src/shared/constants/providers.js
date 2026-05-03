@@ -111,6 +111,7 @@ export const WEB_COOKIE_PROVIDERS = {
 export const MEDIA_PROVIDER_KINDS = [
   { id: "embedding",   label: "Embedding",      icon: "data_array",        endpoint: { method: "POST", path: "/v1/embeddings" } },
   { id: "image",       label: "Text to Image",  icon: "brush",             endpoint: { method: "POST", path: "/v1/images/generations" } },
+  { id: "imageEdit",   label: "Image to Image", icon: "auto_fix_high",     endpoint: { method: "POST", path: "/v1/images/edits" } },
   { id: "imageToText", label: "Image to Text",  icon: "image_search",      endpoint: { method: "POST", path: "/v1/images/understanding" } },
   { id: "tts",         label: "Text To Speech", icon: "record_voice_over", endpoint: { method: "POST", path: "/v1/audio/speech" } },
   { id: "stt",         label: "STT",            icon: "mic",               endpoint: { method: "POST", path: "/v1/audio/transcriptions" } },

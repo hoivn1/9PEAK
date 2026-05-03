@@ -1185,6 +1185,22 @@ Authorization: Bearer your-api-key
 → Returns all models + combos in OpenAI format
 ```
 
+### Image Edits (img2img)
+
+```bash
+POST http://localhost:20128/v1/images/edits
+Authorization: Bearer your-api-key
+Content-Type: multipart/form-data
+
+-F "image=@input.jpg"
+-F "prompt=Add warm cinematic lighting and improve interior details"
+-F "model=cx/gpt-5.4"
+-F "n=1"
+-F "size=1024x1024"
+```
+
+Supported fields: `image` (required), `mask` (optional), `prompt` (required), `model` (required), `n`, `size`, `response_format`, `quality`.
+
 ## 📧 Support
 
 - **Website**: [9router.com](https://9router.com)

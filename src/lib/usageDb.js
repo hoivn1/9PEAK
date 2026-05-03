@@ -445,6 +445,20 @@ export async function getRecentLogs(limit = 200) {
 async function calculateCost(provider, model, tokens) {
   if (!tokens || !provider || !model) return 0;
 
+  // Image-edit flat pricing path
+  if ((tokens.image_count || 0) > 0) {
+    const imageCount = Number(tokens.image_count) || 0;
+    const imageEditPricing = {
+      codex: 0.04,
+      openai: 0.04,
+      gemini: 0.039,
+      nanobanana: 0.05,
+      sdwebui: 0.005,
+    };
+    const unit = imageEditPricing[provider] ?? 0;
+    return imageCount * unit;
+  }
+
   try {
     const { getPricingForModel } = await import("@/lib/localDb.js");
     const pricing = await getPricingForModel(provider, model);
